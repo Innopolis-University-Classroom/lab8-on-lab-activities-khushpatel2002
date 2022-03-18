@@ -1,5 +1,5 @@
 package com.muwaffaq.innopolis.solid.SRP.wrong;
-import com.muwaffaq.innopolis.solid.SRP.correct.Product;
+//import com.muwaffaq.innopolis.solid.SRP.correct.Product;
 
 import java.util.List;
 
@@ -20,10 +20,12 @@ public class Cart {
 
     void addToCart(Product product) {
         products.add(product);
+        totals = totals+ product.getValue();
     }
 
     void removeFromCart(Product product) {
         products.remove(product);
+        totals = totals- product.getValue();
     }
 
     void applyDiscount(int percentage) {

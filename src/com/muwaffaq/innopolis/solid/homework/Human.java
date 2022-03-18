@@ -1,6 +1,5 @@
 package com.muwaffaq.innopolis.solid.homework;
 
-
 import java.util.List;
 
 // lab work
